@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="GL-43242_110.xml" author="piechaczek">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">select count(*) from APP_USER WHERE USERNAME = 'java-academy'</sqlCheck>
+        </preConditions>
+        <sql>
+            INSERT INTO APP_USER (username) VALUES ('java-academy')
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

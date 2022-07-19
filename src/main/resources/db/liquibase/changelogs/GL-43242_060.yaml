@@ -1,0 +1,10 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  GL-43242_060
+       author:  piechaczek
+       changes:
+         -  addColumn:
+              tableName: CLIENT
+              column:
+                name: COLUMN_YAML
+                type: NUMBER(3)

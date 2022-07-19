@@ -1,0 +1,21 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "GL-43242_050",
+        "author": "piechaczek",
+        "changes": [
+          {
+            "addColumn": {
+              "tableName": "CLIENT",
+              "column": {
+                "name": "COLUMN_JSON",
+                "type": "NUMBER(3)"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
