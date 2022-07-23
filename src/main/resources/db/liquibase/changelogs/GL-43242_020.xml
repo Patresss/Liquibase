@@ -6,7 +6,7 @@
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
 
     <changeSet id="GL-43242_020.xml" author="piechaczek" runOnChange="false">
-        <addColumn tableName="CLIENT" >
+        <addColumn tableName="FARMER" >
             <column name="AGE" type="NUMBER(3)"/>
         </addColumn>
     </changeSet>

@@ -7,11 +7,10 @@
 
     <changeSet id="GL-43242_120.xml" author="piechaczek" runOnChange="true">
         <comment>
-            Hello world!
+            Report www.apple-quality-good.com
         </comment>
         <sql>
-            UPDATE APP_USER SET ROLE = 'SUPER_SUPER_ADMIN' WHERE USERNAME = 'java-academy';
--- dsd
+            UPDATE APPLE_TYPE SET QUALITY = 'VERY_GOOD' WHERE TYPE_NAME = 'PAPER';
         </sql>
     </changeSet>
 

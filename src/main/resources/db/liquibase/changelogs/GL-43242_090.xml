@@ -7,10 +7,10 @@
 
     <changeSet id="GL-43242_090.xml" author="piechaczek">
         <preConditions onFail="HALT">
-            <sqlCheck expectedResult="1">select count(*) from APP_USER WHERE USERNAME = 'java-academy'</sqlCheck>
+            <sqlCheck expectedResult="1">select count(*) from APPLE_TYPE WHERE TYPE_NAME = 'JAPOK'</sqlCheck>
         </preConditions>
         <sql>
-            UPDATE APP_USER SET ROLE = 'ADMIN' WHERE USERNAME = 'java-academy'
+            UPDATE APPLE_TYPE SET QUALITY = 'GOOD' WHERE TYPE_NAME = 'JAPOK'
         </sql>
     </changeSet>
 

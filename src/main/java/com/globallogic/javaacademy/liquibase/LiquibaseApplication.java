@@ -1,7 +1,7 @@
 package com.globallogic.javaacademy.liquibase;
 
-import com.globallogic.javaacademy.liquibase.entity.Client;
-import com.globallogic.javaacademy.liquibase.repository.ClientRepository;
+import com.globallogic.javaacademy.liquibase.entity.Farmer;
+import com.globallogic.javaacademy.liquibase.repository.FarmerRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -13,8 +13,8 @@ public class LiquibaseApplication {
 
     public static void main(String[] args) {
         final ConfigurableApplicationContext applicationContext = SpringApplication.run(LiquibaseApplication.class, args);
-        final ClientRepository clientRepository = applicationContext.getBean(ClientRepository.class);
-        final List<Client> clients = clientRepository.findAll();
+        final FarmerRepository farmerRepository = applicationContext.getBean(FarmerRepository.class);
+        final List<Farmer> farmers = farmerRepository.findAll();
     }
 
 }

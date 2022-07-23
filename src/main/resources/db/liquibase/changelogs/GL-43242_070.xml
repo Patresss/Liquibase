@@ -6,12 +6,12 @@
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
 
     <changeSet id="GL-43242_070.xml" author="piechaczek" runOnChange="true">
-        <createTable tableName="APP_USER">
-            <column name="APP_USER_ID" type="int" autoIncrement="true">
+        <createTable tableName="APPLE_TYPE">
+            <column name="APPLE_TYPE_ID" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="USERNAME" type="varchar(64)"/>
-            <column name="ROLE" type="varchar(50)"/>
+            <column name="TYPE_NAME" type="varchar(64)"/>
+            <column name="QUALITY" type="varchar(50)"/>
         </createTable>
     </changeSet>
 

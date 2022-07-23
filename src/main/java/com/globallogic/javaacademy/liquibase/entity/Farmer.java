@@ -5,10 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Client {
+public class Farmer {
 
     @Id
-    @Column(name = "CLIENT_ID")
+    @Column(name = "FARMER_ID")
     private Long id;
 
     @Column(name = "FIRST_NAME")

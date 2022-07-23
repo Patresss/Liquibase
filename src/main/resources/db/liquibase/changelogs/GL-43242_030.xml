@@ -7,7 +7,7 @@
 
     <changeSet id="GL-43242_030.xml" author="piechaczek" runOnChange="false">
         <sql>
-            ALTER TABLE CLIENT ADD NUMBER_OF_ORDERS INTEGER
+            ALTER TABLE FARMER ADD NUMBER_OF_APPLES INTEGER
         </sql>
     </changeSet>
 

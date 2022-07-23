@@ -6,8 +6,8 @@
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
 
     <changeSet id="GL-43242_010.xml" author="piechaczek">
-        <createTable tableName="CLIENT">
-            <column name="CLIENT_ID" type="int" autoIncrement="true">
+        <createTable tableName="FARMER">
+            <column name="FARMER_ID" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="FIRST_NAME" type="varchar(50)"/>

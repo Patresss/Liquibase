@@ -7,10 +7,10 @@
 
     <changeSet id="GL-43242_110.xml" author="piechaczek">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="0">select count(*) from APP_USER WHERE USERNAME = 'java-academy'</sqlCheck>
+            <sqlCheck expectedResult="0">select count(*) from APPLE_TYPE WHERE TYPE_NAME = 'PAPER'</sqlCheck>
         </preConditions>
         <sql>
-            INSERT INTO APP_USER (username) VALUES ('java-academy')
+            INSERT INTO APPLE_TYPE (TYPE_NAME, QUALITY) VALUES ('PAPER', 'OK')
         </sql>
     </changeSet>
 

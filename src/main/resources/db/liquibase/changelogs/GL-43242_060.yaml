@@ -4,7 +4,7 @@ databaseChangeLog:
        author:  piechaczek
        changes:
          -  addColumn:
-              tableName: CLIENT
+              tableName: FARMER
               column:
-                name: COLUMN_YAML
+                name: NUMBER_OF_COWS
                 type: NUMBER(3)

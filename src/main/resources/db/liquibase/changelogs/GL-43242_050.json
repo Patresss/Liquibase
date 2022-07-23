@@ -7,9 +7,9 @@
         "changes": [
           {
             "addColumn": {
-              "tableName": "CLIENT",
+              "tableName": "FARMER",
               "column": {
-                "name": "COLUMN_JSON",
+                "name": "NUMBER_OF_BANANAS",
                 "type": "NUMBER(3)"
               }
             }
